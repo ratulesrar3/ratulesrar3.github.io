@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200">
+<title>og:image preview — variant 1: lineage card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: #15171F;
+    color: #EDEAE3;
+    font-family: 'Archivo', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .card {
+    width: 1200px;
+    height: 630px;
+    background: #15171F;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    align-items: center;
+    padding: 64px 72px;
+    gap: 48px;
+    position: relative;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    color: #9AA0AE;
+    letter-spacing: 0.06em;
+    text-transform: lowercase;
+  }
+
+  .name {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 22px;
+    font-weight: 500;
+    color: #EDEAE3;
+    letter-spacing: -0.01em;
+  }
+
+  .name span { color: #9F8FFF; }
+
+  h1 {
+    font-family: 'Newsreader', Georgia, serif;
+    font-style: italic;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 1.18;
+    color: #EDEAE3;
+    letter-spacing: -0.02em;
+  }
+
+  h1 em {
+    font-style: italic;
+    color: #9F8FFF;
+    background: rgba(159,143,255,0.12);
+    padding: 0 4px;
+    border-radius: 3px;
+  }
+
+  .url {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    font-weight: 400;
+    color: #9AA0AE;
+    margin-top: 8px;
+  }
+
+  .diagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .diagram svg {
+    width: 340px;
+    height: auto;
+  }
+
+  /* dim border on right column */
+  .right-panel {
+    border-left: 1px solid #2B303E;
+    padding-left: 48px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="left">
+    <div>
+      <div class="eyebrow">fractional analytics partner</div>
+      <div class="name" style="margin-top:10px">ratul<span>_</span>esrar</div>
+    </div>
+    <h1>Decision-ready analytics for <em>healthtech</em> and <em>marketplace</em> startups</h1>
+    <div class="url">ratulesrar3.github.io</div>
+  </div>
+  <div class="right-panel">
+    <div class="diagram">
+      <svg viewBox="0 0 320 300" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <style>
+            .l-edge { fill: none; stroke: #2B303E; stroke-width: 1.5; }
+            .l-chip { fill: #1C1F29; stroke: #2B303E; stroke-width: 1; }
+            .l-chip-hl { fill: rgba(159,143,255,0.10); stroke: #9F8FFF; stroke-width: 1; }
+            .l-chip-final { fill: rgba(74,222,128,0.10); stroke: #4ADE80; stroke-width: 1; }
+            .l-text { font-family: 'IBM Plex Mono', monospace; font-size: 11px; fill: #9AA0AE; }
+            .l-text-hl { fill: #9F8FFF; font-weight: 500; }
+            .l-text-final { fill: #4ADE80; font-weight: 500; }
+          </style>
+        </defs>
+        <path class="l-edge" d="M75 42 C 120 42, 120 96, 158 96"/>
+        <path class="l-edge" d="M75 96 L 158 96"/>
+        <path class="l-edge" d="M75 150 C 120 150, 120 96, 158 96"/>
+        <path class="l-edge" d="M198 118 L 198 152"/>
+        <path class="l-edge" d="M198 196 L 198 228"/>
+        <rect class="l-chip" x="8" y="24" width="67" height="36" rx="7"/>
+        <text class="l-text" x="20" y="46">product</text>
+        <rect class="l-chip" x="8" y="78" width="67" height="36" rx="7"/>
+        <text class="l-text" x="20" y="100">EHR</text>
+        <rect class="l-chip" x="8" y="132" width="67" height="36" rx="7"/>
+        <text class="l-text" x="20" y="154">billing</text>
+        <rect class="l-chip-hl" x="158" y="74" width="120" height="44" rx="7"/>
+        <text class="l-text l-text-hl" x="172" y="100">stg_ → fct_</text>
+        <rect class="l-chip-hl" x="158" y="152" width="120" height="44" rx="7"/>
+        <text class="l-text l-text-hl" x="172" y="178">metrics layer</text>
+        <rect class="l-chip-final" x="158" y="228" width="120" height="44" rx="7"/>
+        <text class="l-text l-text-final" x="172" y="254">decisions</text>
+      </svg>
+    </div>
+  </div>
+</div>
+</body>
+</html>

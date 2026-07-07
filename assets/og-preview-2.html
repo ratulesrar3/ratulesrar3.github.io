@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200">
+<title>og:image preview — variant 2: terminal card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: #15171F;
+    color: #EDEAE3;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  /* subtle dot-grid texture */
+  body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, #2B303E 1px, transparent 1px);
+    background-size: 28px 28px;
+    opacity: 0.35;
+    pointer-events: none;
+  }
+
+  .center {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .wordmark {
+    font-family: 'IBM Plex Mono', 'Courier New', monospace;
+    font-size: 96px;
+    font-weight: 500;
+    color: #EDEAE3;
+    letter-spacing: -0.04em;
+    line-height: 1;
+  }
+
+  .wordmark .cursor { color: #9F8FFF; }
+
+  .tagline {
+    font-family: 'Newsreader', Georgia, serif;
+    font-style: italic;
+    font-size: 28px;
+    font-weight: 400;
+    color: #9AA0AE;
+    letter-spacing: -0.01em;
+    max-width: 640px;
+    line-height: 1.4;
+  }
+
+  .url {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4D5566;
+    letter-spacing: 0.04em;
+    margin-top: 4px;
+  }
+</style>
+</head>
+<body>
+<div class="center">
+  <div class="wordmark">ratul<span class="cursor">_</span>esrar</div>
+  <div class="tagline">Decision-ready analytics for healthtech and marketplace startups</div>
+  <div class="url">ratulesrar3.github.io</div>
+</div>
+</body>
+</html>
