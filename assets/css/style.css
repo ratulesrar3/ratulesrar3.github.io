@@ -10,7 +10,7 @@
     --accent-soft:rgba(159,143,255,.14);
     --amber:#E0A458;
     --green:#4ADE80;
-    --max:1080px;
+    --max:1200px;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
@@ -26,7 +26,8 @@
   a{color:inherit;}
   a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px;}
 
-  .wrap{max-width:var(--max);margin:0 auto;padding:0 22px;}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 32px;}
+  @media(max-width:600px){.wrap{padding:0 18px;}}
 
   /* ---------- nav ---------- */
   header{
